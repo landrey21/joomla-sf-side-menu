@@ -1,0 +1,94 @@
+/* Default Joomla! Menu */
+#ja-container2 ul.menu {
+	margin: 0;
+	padding: 1px 0 0;
+	list-style-type: none;
+}
+
+#ja-container2 ul.menu li {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style-type: none;
+	background: none repeat scroll 0 0 transparent;
+}
+
+#ja-container2 ul.menu li a {
+	padding: 2px 0;
+	display: block;
+	color: #333333;
+	border: 1px solid #FFFFFF;
+	border-bottom: 1px solid #E3E3E3;
+	border-right: 1px solid #E3E3E3;
+	text-decoration: none;
+	outline: none;
+}
+#ja-container2 ul.menu li.active {
+	font-weight: bold;
+	/*background-color: #FFFFFF;*/
+	/*color: #CC0000;*/
+}
+
+#ja-container2 ul.menu li a span {
+	padding-left: 10px;
+}
+#ja-container2 ul.menu li.active a {
+/*	background-color: #FFFFFF;*/
+	/*color: #CC0000;*/
+}
+#ja-container2 ul.menu li.active a span {
+	/*color: #CC0000;*/
+}
+#ja-container2 ul.menu li ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#ja-container2 ul.menu li li {
+	padding: 0 0 0 18px !important;
+	list-style-type: none;
+	font-weight: normal;
+	/*background: none repeat scroll 0 0 transparent;*/
+}
+
+#ja-container2 ul.menu li li a {
+	color: #333333;
+/*	border-top: 1px solid #EEEEEE;*/
+}
+
+#ja-container2 li#current a {
+	color: #CC0000;
+/*	background-color: #FFFFFF;*/
+}
+#ja-container2 li#current a:active,
+#ja-container2 li#current a:hover,
+#ja-container2 li#current a:focus {
+	color: #FFFFFF;
+	background-color: #006699;
+}
+
+#ja-container2 ul.menu li a:active,
+#ja-container2 ul.menu li a:hover,
+#ja-container2 ul.menu li a:focus {
+	color: #FFFFFF;
+	background-color: #006699;
+}
+/*
+#ja-container2 ul.menu li li a:active,
+#ja-container2 ul.menu li li a:hover,
+#ja-container2 ul.menu li li a:focus {
+	color: #FFFFFF;
+	background-color: #006699;
+}
+*/
+/*
+#ja-container2 ul.menu li li a span {
+	color: #333333;
+}
+*/
+#ja-container2 ul.menu li.parent > a > span {
+   	background-image: url(../images/triangle_down1.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 15px; 
+}

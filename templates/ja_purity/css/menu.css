@@ -1,0 +1,114 @@
+/* Default Joomla! Menu */
+#ja-col1 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	width: 15em;
+	margin-left:.8em;
+}
+#ja-col1 ul li {
+	list-style-type: none;
+	background: none repeat scroll 0 0 transparent;
+	padding: 0;
+}
+
+#ja-col1 li {
+	position: relative;
+	float: left;
+	margin-bottom: -1px;
+	line-height: 2.0em;
+	list-style-type: none;
+	background: none repeat scroll 0 0 transparent;
+	width: 15em;
+	/*border-color: #FFFFFF #E3E3E3 #E3E3E3 #FFFFFF;*/
+	border-color: #FFFFFF #AAAAAA #AAAAAA #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	z-index: 29000;
+}
+
+#ja-col1 li ul {
+	position: absolute;
+	left: -999em;
+	margin-left: 15.10em;
+	margin-top: -1.9em;
+	list-style-type: none;
+}
+
+#ja-col1 li ul ul {
+	left: -999em;
+	list-style-type: none;
+}
+
+#ja-col1 li a,
+#ja-col1 li span.separator {
+	display: block;
+	color: #333333;
+	/*color: #CCCCCC;*/
+	padding-left: .5em;
+	text-decoration: none;
+	outline: none;
+	/*background-color: #F2F2F2;*/
+	background-color: #EAEAEA;
+}
+
+#ja-col1 li#current > a,
+#ja-col1 li#current > span.separator {
+	font-weight: bold;
+	/*background-color: #FFFFFF;*/
+	color: #CC0000;
+}
+
+#ja-col1 li.active > a,
+#ja-col1 li.active > span.separator {
+	font-weight: bold;
+	/*background-color: #FFFFFF;*/
+	/*background-color: #AAAAAA;*/
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+#ja-col1 li a:hover,
+#ja-col1 li a:focus,
+#ja-col1 li span.separator:hover,
+#ja-col1 li span.separator:focus {
+	color: #FFFFFF;
+	background-color: #006699;
+	visibility: visible;
+}
+#ja-col1 li:hover ul ul, 
+#ja-col1 li:hover ul ul ul, 
+#ja-col1 li.sfhover ul ul, 
+#ja-col1 li.sfhover ul ul ul {
+	left: -999em;
+	visibility: visible;
+}
+/* lists nested under hovered list items */
+#ja-col1 li:hover ul, 
+#ja-col1 li li:hover ul, 
+#ja-col1 li li li:hover ul, 
+#ja-col1 li.sfhover ul, 
+#ja-col1 li li.sfhover ul, 
+#ja-col1 li li li.sfhover ul { 
+	left: auto;
+	visibility: visible;
+}
+
+#ja-col1 li:hover > a,
+#ja-col1 li:hover > span.separator {
+	color: #FFFFFF;
+	background-color: #006699;	
+	visibility: visible;
+}
+#ja-col1 li:hover > a {
+	text-decoration: underline;
+}
+
+#ja-col1 li.parent > a > span,
+#ja-col1 li.parent > span.separator > span {
+	background-image: url(../images/triangle_right.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 15px; 
+}
